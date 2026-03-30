@@ -1,0 +1,10 @@
+Experiment	Histogram	LR	Epochs			CNN Depth	Test Acc    Test Loss  earlyStopping              	CNN inference time
+Baseline	 128	       1e-4	80			3 conv	         0.7990      0.5395      Yes				0.6631 ms 
+Exp 1	         160	       1e-4	80			3 conv	         0.7995      0.5144      No(went till 80 epochs)	0.7553 ms
+Exp 2	         160	       7e-5	80			3 conv	         0.8000      0.5127      No(went till 80 epochs)	0.6330 ms
+Exp 3	         160	       7e-5	120(patience= 10)	3 conv	         0.8392      0.4577      Yes				
+Exp 4	         160	       7e-5	120(patience= 15)	3 conv	         0.8396      0.3902      No(went till 120 epochs)	0.6334 ms 
+Exp 5	         160	       7e-5	150			3 conv	         0.8300	     0.5154 	 Yes(hitted at 109th)		0.6519 ms
+Exp 6	         160	       7e-5	120			4 conv	         0.8947	     0.3290      Yes(hitted at 115th)           0.7470 ms  
+Exp 7	         160	       7e-5	150			4 conv	         0.9248	     0.2669      Yes(hitted at 60th)		0.7800 ms
+Exp 8	         192	       7e-5	120			3 conv	         0.7980	     0.5493      No                             0.6542 ms
